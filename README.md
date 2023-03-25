@@ -1,6 +1,6 @@
 # Vanessa Vun Portfolio
 
-Portfolio is a single page app (version 3) built with React and Tailwind CSS. Tools: Vite, NPM package (React-Reveal), Herotofu.
+Portfolio is a single page app (version 4) built with React and Tailwind CSS. Tools: Vite, NPM package (React-Reveal, React-Big-Bang-Star-Field), Herotofu.
 
 ## Installation
 
