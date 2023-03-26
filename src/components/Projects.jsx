@@ -33,7 +33,7 @@ function Projects() {
     imageUrl: "https://i.ibb.co/kg4kFRz/ezgif-com-video-to-gif.gif",
     title: "Personal Portfolio v 4.0",
     description: "My personal portfolio is a single page app to show about me, my skills, and personal projects.",
-    badges: ["React", "Tailwind CSS", "Vite", "Netlify"],
+    badges: ["React", "Tailwind CSS", "Vite", "Vercel"],
     urls: [
       ["https://vanessavun.github.io/portfolio/", "v1.0"],
       ["https://delicate-lokum-492537.netlify.app/", "v2.0"],
