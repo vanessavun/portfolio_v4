@@ -31,7 +31,7 @@ function Projects() {
   }
   const project3 = {
     imageUrl: "https://i.ibb.co/kg4kFRz/ezgif-com-video-to-gif.gif",
-    title: "Personal Portfolio v 3.0",
+    title: "Personal Portfolio v 4.0",
     description: "My personal portfolio is a single page app to show about me, my skills, and personal projects.",
     badges: ["React", "Tailwind CSS", "Vite", "Netlify"],
     urls: [
