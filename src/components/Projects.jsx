@@ -30,13 +30,14 @@ function Projects() {
     githubUrl: "https://github.com/vanessavun/ztm-face-recognition"
   }
   const project3 = {
-    imageUrl: "https://i.ibb.co/mXPFgHF/portfolio.png",
+    imageUrl: "https://i.ibb.co/kg4kFRz/ezgif-com-video-to-gif.gif",
     title: "Personal Portfolio v 3.0",
     description: "My personal portfolio is a single page app to show about me, my skills, and personal projects.",
     badges: ["React", "Tailwind CSS", "Vite", "Netlify"],
     urls: [
-      ["https://vanessavun.github.io/portfolio/", "v 1.0"],
-      ["https://delicate-lokum-492537.netlify.app/", "v 2.0"]
+      ["https://vanessavun.github.io/portfolio/", "v1.0"],
+      ["https://delicate-lokum-492537.netlify.app/", "v2.0"],
+      ["https://peaceful-semolina-bb87da.netlify.app/", "v3.0"]
     ],
     githubUrl: "https://github.com/vanessavun/portfolio_v3"
   }
