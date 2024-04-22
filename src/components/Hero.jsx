@@ -7,7 +7,7 @@ import BigBangStarField from "react-big-bang-star-field";
 function Hero() {
   return (
     <section className="flex justify-center items-center min-h-screen">
-      <BigBangStarField numStars={200} maxStarSpeed={1} scale={2} className='absolute w-full h-full' starColor={"217, 160, 244"} />
+      <BigBangStarField numStars={50} maxStarSpeed={1} scale={1} className='absolute w-full h-full' starColor={"217, 160, 244"} />
       <div className="container flex">
         <div className="hero-content md:flex justify-center">
           <div className="flex flex-col justify-center p-4">
@@ -19,8 +19,8 @@ function Hero() {
                 Vanessa Vun
               </h1>
               <p className=" text-indigo-300 font-medium font-sans">
-                I'm a Software Developer from the San Francisco Bay Area,
-                focused on building tools to help people work better.
+                From the SF Bay Area, I am a Front-End Engineer at SciShield,
+                focused on building features to help people work efficiently and for laboratories to stay safe.
               </p>
             </Fade>
           </div>

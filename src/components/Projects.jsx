@@ -80,7 +80,7 @@ function Projects() {
           {/* Project 1 Kanban Board */}
           <ProjectBlock project={project1} />
           {/* Project 2 Face */}
-          <ProjectBlock project={project2} />
+          {/* <ProjectBlock project={project2} /> */}
           {/* Project 3 Portfolio */}
           <ProjectBlock project={project3} />
         </Fade>
