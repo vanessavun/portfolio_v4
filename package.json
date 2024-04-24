@@ -6,14 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "dependencies": {
-    "cypress": "^13.8.0",
+    "@emotion/react": "^11.11.4",
+    "cypress": "13.8.1",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.8",
     "react-big-bang-star-field": "^1.0.10",
-    "react-dom": "^18.2.0",
-    "react-reveal": "^1.2.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

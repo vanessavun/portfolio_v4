@@ -1,10 +1,11 @@
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Projects from "./components/Projects";
-import Hero from "./components/Hero";
-import Header from "./components/Header";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
+import Footer from "./containers/Footer";
+import Projects from "./containers/Projects";
+import Hero from "./containers/Hero";
+import Header from "./containers/Header";
+import ScrollUp from "./components/ScrollUp";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <ScrollUp />
         <Footer />
     </>
   );

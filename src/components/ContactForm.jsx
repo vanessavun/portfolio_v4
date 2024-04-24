@@ -30,7 +30,7 @@ const ContactForm = () => {
         method="POST"
         target="_blank"
       >
-        <label className="block mb-6" for="name">
+        <label className="block mb-6" htmlFor="name">
           <input
             type="text"
             name="name"
@@ -39,7 +39,7 @@ const ContactForm = () => {
             required
           />
         </label>
-        <label className="block mb-6" for="email">
+        <label className="block mb-6" htmlFor="email">
           <input
             type="text"
             name="email"
@@ -49,7 +49,7 @@ const ContactForm = () => {
             required
           />
         </label>
-        <label className="block mb-6" for="message">
+        <label className="block mb-6" htmlFor="message">
           <textarea
             name="message"
             placeholder="Your message here"

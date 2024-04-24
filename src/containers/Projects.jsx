@@ -1,8 +1,8 @@
 import React from "react";
-import { Fade } from "react-reveal";
-import FeaturedProject from "./FeaturedProject";
-import ProjectBlock from "./ProjectBlock";
-
+import { Fade} from "react-awesome-reveal";
+import FeaturedProject from "../components/FeaturedProject";
+import ProjectBlock from "../components/ProjectBlock";
+import ScrollUp from "../components/ScrollUp";
 
 function Projects() {
   const ladycrushcrew = {
@@ -79,8 +79,6 @@ function Projects() {
           <ProjectBlock project={ladycrushcrew} />
           {/* Project 1 Kanban Board */}
           <ProjectBlock project={project1} />
-          {/* Project 2 Face */}
-          {/* <ProjectBlock project={project2} /> */}
           {/* Project 3 Portfolio */}
           <ProjectBlock project={project3} />
         </Fade>

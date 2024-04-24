@@ -2,6 +2,7 @@ import React from "react";
 import LiveSiteButton from "./LiveSiteButton";
 import Badge from "./Badge";
 import ProjectImage from "./ProjectImage";
+import Link from "./Link";
 
 function ProjectBlock({project}) {
   const { imageUrl, title, description, badges, liveUrl, urls, githubUrl } = project;
@@ -16,17 +17,15 @@ function ProjectBlock({project}) {
           {description}
         </p>
         <ul className="p-2 flex flex-wrap">
-          {badges.map(badge => <Badge badge={badge} />)}
+          {badges.map(badge => <Badge badge={badge} key={badge} />)}
         </ul>
         <div className="flex flex-row px-4 py-2">
           {liveUrl && <LiveSiteButton url={liveUrl} />}
           {urls && urls.map(url => {
-            return (<LiveSiteButton url={url[0]} name={url[1]} />)})
+            return (<LiveSiteButton url={url[0]} name={url[1]} key={url} />)})
           }
           <div className=" text-indigo-300 uppercase px-4 py-2">
-            <a href={githubUrl} target="_blank">
-              Code
-            </a>
+            <Link url={githubUrl} word={"Code"} />
           </div>
         </div>
       </div>

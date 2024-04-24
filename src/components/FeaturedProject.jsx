@@ -2,6 +2,7 @@ import React from "react";
 import LiveSiteButton from "./LiveSiteButton";
 import Badge from "./Badge";
 import ProjectImage from "./ProjectImage";
+import Link from "./Link";
 
 function FeaturedProject({ project }) {
   const { imageUrl, title, description, badges, liveUrl, githubUrl } = project;
@@ -17,14 +18,12 @@ function FeaturedProject({ project }) {
         <h2 className="text-indigo-200 font-bold text-normal px-4">{title}</h2>
         <p className=" text-blue-200 font-normal px-4 pt-4">{description}</p>
         <ul className="italic p-2 flex flex-wrap">
-        {badges.map(badge => <Badge badge={badge} />)}
+        {badges.map(badge => <Badge badge={badge} key={badge} />)}
         </ul>
         <div className="flex flex-row px-4 py-2">
           <LiveSiteButton url={liveUrl} />
           <div className=" text-indigo-300 font-medium px-4 py-2 uppercase">
-            <a href={githubUrl} target="_blank">
-              Code
-            </a>
+            <Link url={githubUrl} word={"Code"} />
           </div>
         </div>
       </div>

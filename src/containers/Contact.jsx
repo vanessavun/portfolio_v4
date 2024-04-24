@@ -1,9 +1,9 @@
 import React from 'react'
-import ContactForm from './ContactForm'
+import ContactForm from '../components/ContactForm'
 import igIcon from '../assets/instagram.png'
 import liIcon from '../assets/linkedin.png'
 import ghIcon from '../assets/github.png'
-import { Fade } from 'react-reveal'
+import { Fade} from "react-awesome-reveal";
 
 function Contact() {
   return (

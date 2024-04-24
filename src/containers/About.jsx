@@ -1,5 +1,6 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade} from "react-awesome-reveal";
+import Link from "../components/Link";
 
 function About() {
   return (
@@ -7,26 +8,19 @@ function About() {
       <div className="container">
         <Fade>
           <div className="about-section p-4">
-            <h1 className="text-2xl uppercase font-bold text-indigo-200 font-poppins py-4">
-              ⭐️ About me
-            </h1>
             <div className="h-0.5 gradient-div"></div>
             <div className="flex flex-row p-4">
               <div className="about-text leading-7 text-xl">
                 <p className="text-indigo-200 font-medium my-2">
-                  Deeply inspired after using a dashboard with a live sample
-                  pipeline and its ability to control robots and instruments at
-                  a biotech laboratory, I knew I had to go back to my childhood
-                  passion in coding. I started with learning C++ and building
-                  PCs in middle school, but I was steered to pursue a role as a
-                  doctor then a clinical lab scientist in the healthcare/biotech
-                  industry.
+                  In 2022, deeply inspired after using an internal biotech company dashboard that showed live sample
+                  statuses and its ability to control robots and lab instruments, I wanted to pursue my childhood
+                  passion in coding and creativity (visual arts/DIY).
                 </p>
                 <p className=" text-indigo-200 font-medium mt-4">
-                  I realized that laboratory science wasn't for me and
+                  I realized that laboratory science wasn't for me anymore and
                   wanted a more challenging role where I had to keep constantly
-                  learning. Impatient to learn, I started my self-taught coding
-                  journey using various resources such as Codecademy, Scrimba
+                  learning. I started my self-taught coding
+                  journey using various <Link url={"https://www.linkedin.com/pulse/vanessas-tech-resources-faq-vanessa-vun/"} word={"resources"} /> such as Codecademy, Scrimba
                   and Udemy.
                 </p>
                 <p className=" text-blue-200 font-medium mt-4">
@@ -39,7 +33,7 @@ function About() {
                   <p className="uppercase">Hobbies & interests:</p>
                   <ul className="flex p-4 flex-wrap font-poppins">
                     <li className="px-4">🐱Cats</li>
-                    <li className="px-4">🧗🏻‍♀️<a href="https://www.instagram.com/rocketnessa/" target="_blank"><i className="underline">Climbing</i></a></li>
+                    <li className="px-4">🧗🏻‍♀️<Link url={"https://www.instagram.com/rocketnessa/"} word={<i className="underline">Climbing</i>} /></li>
                     <li className="px-4">📺K-pop/k-drama</li>
                     <li className="px-4">💃🏽Dance covers</li>
                     <li className="px-4">🪚Home climbing wall</li>
