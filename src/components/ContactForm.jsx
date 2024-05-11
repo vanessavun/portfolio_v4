@@ -14,7 +14,7 @@ const ContactForm = () => {
   if (submitted) {
     return (
       <>
-        <div className="text-xl p-4 font-semibold text-center">
+        <div className="text-xl p-4 font-semibold text-center text-white">
           Thank you for your message!
         </div>
       </>
