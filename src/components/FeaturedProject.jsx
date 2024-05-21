@@ -8,7 +8,7 @@ function FeaturedProject({ project }) {
   const { imageUrl, title, description, badges, liveUrl, githubUrl } = project;
   return (
     <div className="projects-container sm:flex bg-indigo-800 py-4">
-      <div className="rotate relative">
+      <div className="relative">
         <ProjectImage url={imageUrl} />
         <span className="featured absolute top-0 left-0 bg-yellow-300 m-0 p-1 text-xs uppercase font-extrabold">
           Featured

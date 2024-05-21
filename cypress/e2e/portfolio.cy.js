@@ -11,6 +11,5 @@ describe("template spec", () => {
     cy.get('[for="message"] > .block').type("Test");
     cy.contains("button", "Submit").click();
     cy.contains("Thank you for your message!").should("be.visible");
-    // Click link opens up new URL: https://public.herotofu.com/v1/d7f4f4a0-7813-11ed-a126-b172cf164538
   });
 });

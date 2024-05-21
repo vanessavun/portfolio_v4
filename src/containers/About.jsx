@@ -1,6 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Link from "../components/Link";
+import Heading from "../components/Heading";
 
 function About() {
   const list = ["Test1", "Test2", "Test3"];
@@ -9,6 +10,7 @@ function About() {
       <div className="container">
         <Fade>
           <div className="about-section p-4">
+            <Heading heading="Intro" />
             <div className="h-0.5 gradient-div"></div>
             <div className="flex flex-row p-4">
               <div className="about-text leading-7 text-xl">
@@ -54,41 +56,6 @@ function About() {
                     <li className="px-4">🪚Home climbing wall</li>
                     <li className="px-4">🛠Custom PC builds</li>
                     <li className="px-4">⌨️Mechanical keyboards</li>
-                  </ul>
-                </div>
-                <div className=" text-indigo-200 font-medium my-4 text-xl">
-                  <p className="uppercase font-medium">Skills:</p>
-                  <ul className="flex p-2 flex-wrap font-poppins text-base">
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      JavaScript
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      HTML/CSS
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">Vue</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">Vuex</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">PHP</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">MySQL</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">React</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      Typescript
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">Redux</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      Tailwind
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      Styled Components
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">API</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      Firebase
-                    </li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">Express</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">Node</li>
-                    <li className="px-1 m-1 bg-blue-900 rounded-md">
-                      PostgreSQL
-                    </li>
                   </ul>
                 </div>
               </div>

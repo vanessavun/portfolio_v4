@@ -17,18 +17,13 @@ function Header() {
                   <a href="#about">About</a>
                 </li>
                 <li className="mx-4">
+                  <a href="#work">Work</a>
+                </li>
+                <li className="mx-4">
                   <a href="#projects">Projects</a>
                 </li>
                 <li className="mx-4">
                   <a href="#contact">Contact</a>
-                </li>
-                <li className="mx-4">
-                  <a
-                    href="https://www.linkedin.com/in/vanessavun/"
-                    target="_blank"
-                  >
-                    LinkedIn
-                  </a>
                 </li>
               </ul>
             </div>

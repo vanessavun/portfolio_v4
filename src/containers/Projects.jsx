@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import FeaturedProject from "../components/FeaturedProject";
 import ProjectBlock from "../components/ProjectBlock";
 import ScrollUp from "../components/ScrollUp";
+import Heading from "../components/Heading";
 
 function Projects() {
   const ladycrushcrew = {
@@ -89,19 +90,15 @@ function Projects() {
   return (
     <section id="projects" className="flex justify-center">
       <div className="container p-4">
-        <h1 className="text-xl uppercase font-bold text-indigo-200 font-serif py-4">
-          ⭐️ Projects
-        </h1>
-        <div className="h-0.5 gradient-div mb-4"></div>
         <Fade>
+          <Heading heading="Personal projects" />
+          <div className="h-0.5 gradient-div mb-4"></div>
           {/* Featured Project */}
           <FeaturedProject project={project4} />
           {/* Project LadyCrushCrew */}
           <ProjectBlock project={ladycrushcrew} />
           {/* Project 1 Kanban Board */}
           <ProjectBlock project={project1} />
-          {/* Project 3 Portfolio */}
-          <ProjectBlock project={project3} />
         </Fade>
       </div>
     </section>
