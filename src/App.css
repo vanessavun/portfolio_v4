@@ -6,10 +6,7 @@
   .container {
     @apply w-[800px];
   }
-
-  
 }
-
 
 html {
   cursor: url(/src/assets/icons8.png), auto;
@@ -19,7 +16,7 @@ html {
 
 body {
   background-color: #2a0845;
-  background: -webkit-linear-gradient(to top, #2a0845, #6441A5);
+  background: -webkit-linear-gradient(to top, #2a0845, #6441a5);
   background-image: linear-gradient(160deg, #2a0845 0%, #005180 100%);
   overflow-x: hidden;
 }
@@ -27,9 +24,11 @@ body {
 a {
   box-shadow: inset 0 0 0 0 #a5b4fc;
   color: #a5b4fc;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition:
+    color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
 a:hover {
@@ -43,7 +42,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .rotate img {
@@ -51,9 +50,9 @@ button:active {
 }
 
 .rotate img:hover {
-  -webkit-transform: rotateZ(-5deg) scale(.9);
-  -ms-transform: rotateZ(-5deg) scale(.9);
-  transform: rotateZ(-5deg) scale(.9);
+  -webkit-transform: rotateZ(-5deg) scale(0.9);
+  -ms-transform: rotateZ(-5deg) scale(0.9);
+  transform: rotateZ(-5deg) scale(0.9);
   transition: 1s ease;
 }
 
@@ -62,12 +61,20 @@ button:active {
 }
 
 .submit-button {
-  background: linear-gradient(90deg, rgba(100,65,165,0.5956757703081232) 0%, rgba(0,81,128,1) 100%);
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(100, 65, 165, 0.5956757703081232) 0%,
+    rgba(0, 81, 128, 1) 100%
+  );
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .gradient-div {
-  background: linear-gradient(90deg, rgba(100,65,165,0.5956757703081232) 0%, rgb(165, 180, 252) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 65, 165, 0.5956757703081232) 0%,
+    rgb(165, 180, 252) 100%
+  );
 }

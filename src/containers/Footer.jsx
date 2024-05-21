@@ -6,10 +6,10 @@ function Footer() {
     <footer className="py-8 flex flex-col justify-center items-center bg-black">
       <div className="block">
         <p className="text-indigo-200 font-medium text-sm">
-          © {year} | Coded with 💗 by 
+          © {year} | Coded with 💗 by
         </p>
         <p className="text-indigo-200 font-semibold text-2xl mt-1 font-sacramento text-center">
-        Vanessa Vun
+          Vanessa Vun
         </p>
       </div>
       <p className="text-indigo-200 text-xs">

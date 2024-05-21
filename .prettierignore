@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+yarn.lock
+tailwind.config.cjs
+vite.config.js
+package.json
+index.html
+README.md

@@ -54,8 +54,7 @@ const ContactForm = () => {
             name="message"
             placeholder="Your message here"
             className="block w-full p-2 rounded-lg shadow-sm font-serif"
-          >
-          </textarea>
+          ></textarea>
         </label>
         <div className="mb-4">
           <button

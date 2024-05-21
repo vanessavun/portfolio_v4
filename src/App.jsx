@@ -10,13 +10,13 @@ import ScrollUp from "./components/ScrollUp";
 function App() {
   return (
     <>
-        <Header />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-        <ScrollUp />
-        <Footer />
+      <Header />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <ScrollUp />
+      <Footer />
     </>
   );
 }
