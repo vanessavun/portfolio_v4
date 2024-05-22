@@ -21,8 +21,8 @@ function Work() {
   };
   return (
     <section id="work" className="flex justify-center">
-      <Fade>
-        <div className="container p-4">
+      <div className="container p-4">
+        <Fade>
           <Heading heading="Work" />
           <div className="h-0.5 gradient-div mb-4"></div>
           <div className=" text-indigo-200 font-medium my-4 text-xl">
@@ -59,8 +59,8 @@ function Work() {
               <li className="px-1 m-1 bg-blue-900 rounded-md">PostgreSQL</li>
             </ul>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </section>
   );
 }
