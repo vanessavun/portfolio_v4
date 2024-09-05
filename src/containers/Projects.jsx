@@ -4,10 +4,13 @@ import FeaturedProject from "../components/FeaturedProject";
 import ProjectBlock from "../components/ProjectBlock";
 import ScrollUp from "../components/ScrollUp";
 import Heading from "../components/Heading";
+import LCC from "../assets/LCC.gif";
+import Kanban from "../assets/Kanban.png";
+import A2O from "../assets/A2O.gif";
 
 function Projects() {
   const ladycrushcrew = {
-    imageUrl: "https://i.ibb.co/4M1V27j/Lady-Crush-Crew.gif",
+    imageUrl: LCC,
     title: "LADYCRVSHCREW",
     description:
       "Web app for a real climbing community group with user authentication (Google and non-Google), store, shopping cart, and test Stripe payment.",
@@ -22,8 +25,8 @@ function Projects() {
     liveUrl: "https://ladycrushcrew.vanessavun.com/",
     githubUrl: "https://github.com/vanessavun/ladycrushcrewV3",
   };
-  const project1 = {
-    imageUrl: "https://i.ibb.co/MBsQ7VZ/Screenshot-2022-12-29-112403.png",
+  const kanbanproject = {
+    imageUrl: Kanban,
     title: "Sample Batch Kanban Board",
     description:
       "This kanban board serves as a visual presentation of batches running through the laboratory. Features: log in/sign up/sign out via Firebase auth and a countdown timing of batches to help keep track of batch status.",
@@ -31,30 +34,8 @@ function Projects() {
     liveUrl: "https://kanban.vanessavun.com/",
     githubUrl: "https://github.com/vanessavun/labtech",
   };
-  const project2 = {
-    imageUrl: "https://i.ibb.co/5FM1C2s/Screenshot-2022-12-23-225355.png",
-    title: "Face Detection App",
-    description:
-      "This app has a Face Detection App by Clarifai with an entry counter, user registration and log in authentication without OAuth.",
-    badges: ["React", "API", "PostgreSQL", "Node", "Express", "Heroku/Render"],
-    liveUrl: "https://smartbrain.vanessavun.com/",
-    githubUrl: "https://github.com/vanessavun/ztm-face-recognition",
-  };
-  const project3 = {
-    imageUrl: "https://i.ibb.co/kg4kFRz/ezgif-com-video-to-gif.gif",
-    title: "Personal Portfolio v 4.0",
-    description:
-      "My personal portfolio is a single page app to show about me, my skills, and personal projects.",
-    badges: ["React", "Tailwind CSS", "Vite", "Vercel"],
-    urls: [
-      ["https://vanessavun.github.io/portfolio/", "v1.0"],
-      ["https://delicate-lokum-492537.netlify.app/", "v2.0"],
-      ["https://peaceful-semolina-bb87da.netlify.app/", "v3.0"],
-    ],
-    githubUrl: "https://github.com/vanessavun/portfolio_v3",
-  };
-  const project4 = {
-    imageUrl: "https://i.ibb.co/whfV5zk/Apples-to-Oranges.gif",
+  const applesToOranges = {
+    imageUrl: A2O,
     title: "Apples to Oranges: a Grocery Shopping App",
     description:
       "DeveloperWeek 2023 Hackathon project of a shopping app that finds the best prices near the user for a product or item. Role: project presentation, project manager, front-end developer (navigation, home page, responsiveness, hamburger menu, copywriting, illustrations/design choice)",
@@ -93,12 +74,9 @@ function Projects() {
         <Fade>
           <Heading heading="Personal projects" />
           <div className="h-0.5 gradient-div mb-4"></div>
-          {/* Featured Project */}
-          <FeaturedProject project={project4} />
-          {/* Project LadyCrushCrew */}
+          <FeaturedProject project={applesToOranges} />
           <ProjectBlock project={ladycrushcrew} />
-          {/* Project 1 Kanban Board */}
-          <ProjectBlock project={project1} />
+          <ProjectBlock project={kanbanproject} />
         </Fade>
       </div>
     </section>
