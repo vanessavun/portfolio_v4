@@ -1,10 +1,12 @@
 import React from "react";
 import person from "../assets/profilevanessa2.jpg";
 import { Fade } from "react-awesome-reveal";
+import { Galaxy } from "react-stars-particles";
 
 function Hero() {
   return (
     <section className="flex justify-center items-center min-h-screen">
+      <Galaxy quantity={100} />
       <div className="container flex">
         <div className="hero-content md:flex justify-center">
           <div className="flex flex-col justify-evenly p-4">
