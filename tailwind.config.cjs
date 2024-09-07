@@ -9,5 +9,7 @@ module.exports = {
       poppins: ['Poppins', 'cursive']
     }
   },
-  plugins: []
+  plugins: [
+    require("@tailwindcss/forms")
+  ]
 }
