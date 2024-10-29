@@ -1,5 +1,5 @@
 describe("template spec", () => {
-  it("passes", () => {
+  it("visits the portfolio and checks for a successful contact form submission", () => {
     cy.visit("/");
     cy.get("#about").scrollIntoView();
     cy.contains("Cats").should("be.visible");
