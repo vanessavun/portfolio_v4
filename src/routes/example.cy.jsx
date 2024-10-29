@@ -8,7 +8,9 @@ describe("Example component test", () => {
     cy.contains("button", "Change").click();
     cy.on("window:alert", (str) => {
       expect(str).to.equal("Button clicked!");
+      Cypress.log({ name: "Log", message: str });
     });
+    cy.log("Button clicked");
   });
   it("checks that username begins with vanessavun.com", () => {
     cy.get('[data-test="username-span"]').should("be.visible");
