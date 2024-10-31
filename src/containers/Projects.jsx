@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import FeaturedProject from "../components/FeaturedProject";
 import ProjectBlock from "../components/ProjectBlock";
@@ -7,50 +7,49 @@ import Heading from "../components/Heading";
 import LCC from "../assets/LCC.gif";
 import Kanban from "../assets/Kanban.png";
 import A2O from "../assets/A2O.gif";
+import { supabase } from "../supabaseClient";
 
 function Projects() {
-  const ladycrushcrew = {
-    imageUrl: LCC,
-    title: "LADYCRVSHCREW",
-    description:
-      "Web app for a real climbing community group with user authentication (Google and non-Google), store, shopping cart, and test Stripe payment.",
-    badges: [
-      "React",
-      "Typescript",
-      "Stripe",
-      "Redux/Saga",
-      "Firebase",
-      "Netlify",
-    ],
-    liveUrl: "https://ladycrushcrew.vanessavun.com/",
-    githubUrl: "https://github.com/vanessavun/ladycrushcrewV3",
+  const [projectsData, setProjectsData] = useState([]);
+  const [ladycrushcrew, setladycrushcrew] = useState({});
+  const [kanbanproject, setkanbanproject] = useState({});
+  const [applesToOranges, setapplesToOranges] = useState({});
+
+  const fetchProjectsData = async () => {
+    try {
+      const { data: projects, error } = await supabase
+        .from("projects")
+        .select("*");
+      if (error) {
+        console.error(error);
+        return;
+      }
+      setProjectsData(projects);
+    } catch (error) {
+      console.error("Unexpected error: ", error);
+    }
   };
-  const kanbanproject = {
-    imageUrl: Kanban,
-    title: "Sample Batch Kanban Board",
-    description:
-      "This kanban board serves as a visual presentation of batches running through the laboratory. Features: log in/sign up/sign out via Firebase auth and a countdown timing of batches to help keep track of batch status.",
-    badges: ["React", "Bootstrap", "Context API", "Firebase", "Netlify"],
-    liveUrl: "https://kanban.vanessavun.com/",
-    githubUrl: "https://github.com/vanessavun/labtech",
-  };
-  const applesToOranges = {
-    imageUrl: A2O,
-    title: "Apples to Oranges: a Grocery Shopping App",
-    description:
-      "DeveloperWeek 2023 Hackathon project of a shopping app that finds the best prices near the user for a product or item. Role: project presentation, project manager, front-end developer (navigation, home page, responsiveness, hamburger menu, copywriting, illustrations/design choice)",
-    badges: [
-      "React",
-      "Tailwind CSS",
-      "Firebase",
-      "MapBox",
-      "MapQuest API",
-      "Vite",
-      "Netlify",
-      "Figma",
-    ],
-    liveUrl: "https://apples2oranges.netlify.app/",
-    githubUrl: "https://github.com/Oh-Bits-Please/hackathon-2023",
+  useEffect(() => {
+    fetchProjectsData();
+  }, []);
+  useEffect(() => {
+    if (projectsData) {
+      updateProjects(projectsData);
+    }
+  }, [projectsData]);
+
+  const updateProjects = (fetchedData) => {
+    fetchedData.forEach((project) => {
+      if (project.title === "LADYCRVSHCREW") {
+        setladycrushcrew({ imageUrl: LCC, ...project });
+      }
+      if (project.title === "Sample Batch Kanban Board") {
+        setkanbanproject({ imageUrl: Kanban, ...project });
+      }
+      if (project.title === "Apples to Oranges: a Grocery Shopping App") {
+        setapplesToOranges({ imageUrl: A2O, ...project });
+      }
+    });
   };
 
   const liveSiteButton = (url) => {

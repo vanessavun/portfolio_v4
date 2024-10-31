@@ -4,7 +4,6 @@ import Link from "../components/Link";
 import Heading from "../components/Heading";
 
 function About() {
-  const list = ["Test1", "Test2", "Test3"];
   return (
     <section id="about" className="flex justify-center text-sm md:text-base">
       <div className="container">

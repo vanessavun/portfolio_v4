@@ -18,7 +18,7 @@ function FeaturedProject({ project }) {
         <h2 className="text-indigo-200 font-bold text-normal px-4">{title}</h2>
         <p className=" text-blue-200 font-normal px-4 pt-4">{description}</p>
         <ul className="italic p-2 flex flex-wrap">
-          {badges.map((badge) => (
+          {badges?.map((badge) => (
             <Badge badge={badge} key={badge} />
           ))}
         </ul>

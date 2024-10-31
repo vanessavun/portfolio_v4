@@ -4,10 +4,8 @@ function Header() {
   return (
     <header className="top-area">
       <div className="header-area flex justify-center bg-black">
-        {/* Navigation */}
         <nav className="container">
           <div className=" flex justify-center sm:justify-between py-4 px-1 text-indigo-300">
-            {/* Header Navigation */}
             <div className="flex items-center font-sacramento text-3xl -mb-4 font-bold">
               VV
             </div>
@@ -27,12 +25,9 @@ function Header() {
                 </li>
               </ul>
             </div>
-            {/* End header navigation */}
           </div>
         </nav>
-        {/* End navigation */}
       </div>
-      {/* End top area */}
     </header>
   );
 }

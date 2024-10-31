@@ -33,10 +33,9 @@ function ProjectBlock({ project }) {
         {(liveUrl || urls || githubUrl) && (
           <div className="flex flex-row px-4 py-2">
             {liveUrl && <LiveSiteButton url={liveUrl} name={linkName || ""} />}
-            {urls &&
-              urls.map((url) => {
-                return <LiveSiteButton url={url[0]} name={url[1]} key={url} />;
-              })}
+            {urls?.map((url) => {
+              return <LiveSiteButton url={url[0]} name={url[1]} key={url} />;
+            })}
             {githubUrl && (
               <div className=" text-indigo-300 uppercase px-4 py-2">
                 <Link url={githubUrl} word={"Code"} />
