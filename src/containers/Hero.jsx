@@ -18,9 +18,9 @@ function Hero() {
                 </h1>
               </div>
               <p className=" text-indigo-300 font-medium font-sans">
-                In the SF Bay Area, I am a Front-End Engineer at SciShield,
-                focused on building features to help people work efficiently and
-                for laboratories to stay safe.
+                I am a Software Engineer in the SF Bay Area, passionate about
+                building tools that make work more efficient, collaboration more
+                seamless, and technology more human.
               </p>
             </Fade>
           </div>

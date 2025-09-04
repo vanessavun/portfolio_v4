@@ -14,30 +14,25 @@ function About() {
             <div className="flex flex-row p-4">
               <div className="about-text leading-7 text-xl">
                 <p className="text-indigo-200 font-medium my-2">
-                  In 2022, deeply inspired after using an internal biotech
-                  company dashboard that showed live sample statuses and its
-                  ability to control robots and lab instruments, I wanted to
-                  pursue my childhood passion in coding and creativity (visual
-                  arts/DIY).
+                  In 2022, I felt a spark of inspiration while using a biotech
+                  dashboard that displayed live sample statuses and even
+                  controlled lab robots and instruments. That moment rekindled
+                  my childhood passion for coding and creativity (whether
+                  through visual arts or DIY projects).
                 </p>
                 <p className=" text-indigo-200 font-medium mt-4">
-                  I realized that laboratory science wasn't for me anymore and
-                  wanted a more challenging role where I had to keep constantly
-                  learning. I started my self-taught coding journey using
-                  various{" "}
-                  <Link
-                    url={
-                      "https://www.linkedin.com/pulse/vanessas-tech-resources-faq-vanessa-vun/"
-                    }
-                    word={"resources"}
-                  />{" "}
-                  such as Codecademy, Scrimba and Udemy.
+                  I realized that laboratory science was no longer where I
+                  wanted to grow. I craved a role that challenged me to keep
+                  learning and problem-solving every day. So, I began a
+                  self-taught coding journey with platforms like Codecademy,
+                  Scrimba, and Udemy.
                 </p>
                 <p className=" text-blue-200 font-medium mt-4">
-                  I thrive at the constant learning and solving problems through
-                  code to make a positive impact in people's lives. From my
-                  professional experience, I offer empathy, attention to
-                  details, and teamwork.
+                  Today, I thrive on turning complex problems into elegant
+                  solutions that positively impact people’s lives. From my
+                  background in science, I bring empathy, meticulous attention
+                  to detail, and a collaborative spirit to every project I work
+                  on.
                 </p>
                 <div className=" text-indigo-300 font-medium my-4 text-lg">
                   <p className="uppercase">Hobbies & interests:</p>
